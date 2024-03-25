@@ -23,5 +23,6 @@ describe("Route Schema test", () => {
         const routeRepo = dataSource.getRepository(Route);
 
         await routeRepo.save(route)
+        console.log(await routeRepo.findOneBy({id: route.id}))
     });
 });
