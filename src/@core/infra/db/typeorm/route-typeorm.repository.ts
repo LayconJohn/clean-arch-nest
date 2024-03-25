@@ -1,4 +1,4 @@
-import { Route } from "src/@core/domain/route.entity";
+import { Route } from "../../../domain/route.entity";
 import { RouteRepositoryInterface } from "../../../domain/route.repository";
 import { Repository } from "typeorm";
 
