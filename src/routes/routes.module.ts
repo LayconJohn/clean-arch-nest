@@ -5,6 +5,8 @@ import { RouteInMemoryRepository } from 'src/@core/infra/db/in-memory/route-in-m
 import { CreateRouteUseCase } from 'src/@core/application/create-route.use-case';
 import { ListAllRoutesUseCase } from 'src/@core/application/list-all-route.use-case';
 
+
+//TO_DO: implementar namespace para organizar
 @Module({
   controllers: [RoutesController],
   providers: [

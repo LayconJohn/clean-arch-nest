@@ -1,26 +1,26 @@
-import { EntitySchema } from 'typeorm';
-import { Route } from '../../../domain/route.entity';
+import { Route } from "src/@core/domain/route.entity";
+import { EntitySchema } from "typeorm";
 
 export const RouteSchema = new EntitySchema<Route>({
-  name: 'route',
-  target: Route,
-  columns: {
-    id: {
-      type: 'uuid',
-      primary: true,
-    },
-    title: {
-      type: String,
-      length: 255,
-    },
-    startPosition: {
-      type: 'simple-json',
-    },
-    endPosition: {
-      type: 'simple-json',
-    },
-    points: {
-      type: 'simple-json',
-    },
-  },
-});
+    name: 'route',
+    target: Route,
+    columns: {
+        id: {
+            type: 'uuid',
+            primary: true
+        },
+        title: {
+            type: String,
+            length: 255
+        },
+        startPosition: {
+            type: 'simple-json'
+        },
+        endPosition: {
+            type: 'simple-json'
+        },
+        points: {
+            type: "simple-json"
+        }
+    } 
+})

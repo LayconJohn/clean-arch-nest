@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { CreateRouteDto } from './dto/create-route.dto';
-import { UpdateRouteDto } from './dto/update-route.dto';
 import { CreateRouteUseCase } from 'src/@core/application/create-route.use-case';
 import { ListAllRoutesUseCase } from 'src/@core/application/list-all-route.use-case';
 
